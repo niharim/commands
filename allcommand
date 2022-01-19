@@ -1,0 +1,135 @@
+COMMANDS:
+
+Directory related commands:
+
+
+	•	ls{directory}:
+
+The is command is used to display a list of content of a directory. 
+
+Syntax:
+
+$ ls [option]... [File]... 
+
+Eg:
+
+
+
+2) pwd:
+
+The pwd command is used to display the location of the current working directory
+	
+Syntax:
+
+$pwd 
+Eg:
+ 
+
+3) mkdir:
+
+The mkdir command is used to create a new directory under any directory.
+Syntax:
+$ mkdir dirname 
+Eg:
+
+4) cd:
+Cd command is used to change current directory. Without a "dirname", it will return you to your home directory. Otherwise, it takes you to the directory named. "cd /" will take you to the root directory. 
+Syntax:
+$ cd [dirname] 
+$ cd ..
+Eg:
+
+5)rmdir:
+The commnd rmdir is used to delete a directory.
+Syntax:
+$ rmdir dirname 
+Eg:
+
+
+File related commands:
+
+	•	Cat{filename}:
+
+The cat command is a multi-purpose utility in the Linux system. It can be used to create a file, display content of the file, copy the content of one file to another file, and more.
+
+Syntax:
+
+-to create file:
+
+$cat > <file name>  // Enter file content  
+
+-to display file content:
+
+$cat  <file name> 
+
+-used to concatenate files to a single file:
+
+$cat file1 file2 >file3
+Eg: 
+
+2) cp:
+Copies filse from one file/directory to another
+Syntax:
+$ cp source-filename destination-filename
+$ cp source-filename destination-directory 
+Eg:
+
+3) mv filename path:
+ Moves "filename" to "path". This might consist of a simple renaming of the file. 
+Syntax:
+$ mv present-filename new-filename To rename a file $ mv source-filename destination-directory To move a file into another directory
+Eg:
+
+4)  rm filename(s):
+Remove files.
+Syntax:
+$ rm filename 
+Eg:
+
+5)cmp {file1} {file2}:
+Compares the contents of two files from each other. Reports the first different character found, and the line number. 
+Syntax:
+$cmp file1 file2 
+Eg:
+
+6) diff {file1} {file2}:
+Displays difference between files or directories
+Syntax:
+$ diff file1 file2 
+Eg:
+
+7) comm {file1} {file2}
+Displays common lines between two files.
+Syntax:
+$ comm. {-{1}{2}{3}} file1 file2 
+
+Filter Commands:
+
+	•	Grep 
+
+The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The pattern that is searched in the file is referred to as the regular expression (grep stands for globally search for regular expression and print out).  
+Syntax: grep [options] pattern [files]
+Options Description
+-c : This prints only a count of the lines that match a pattern
+-h : Display the matched lines, but do not display the filenames.
+-i : Ignores, case for matching
+-l : Displays list of a filenames only.
+-n : Display the matched lines and their line numbers.
+-v : This prints out all the lines that do not matches the pattern
+-e exp : Specifies expression with this option. Can use multiple times.
+-f file : Takes patterns from file, one per line.
+-E : Treats pattern as an extended regular expression (ERE)
+-w : Match whole word
+-o : Print only the matched parts of a matching line, with each such part on a separate output line.
+-A n : Prints searched line and n lines after the result.
+-B n : Prints searched line and n line before the result.
+-C n : Prints searched line and n lines after before the result
+
+
+2) head & tail
+
+Default displays the first or last 10 lines of a file respectively
+Syntax : 
+$ head {-n} filename $ tail {-n} filename
+
+	•	sort: It is used to sort the contents of a file.
